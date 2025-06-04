@@ -1,14 +1,14 @@
 # Tweet Analyzer – Swipeline Case
 
-Bu proje, Swipeline AI Studio Developer Intern teknik görevi kapsamında geliştirilen bir AI destekli Tweet analiz uygulamasıdır. Kullanıcıdan alınan bir tweet (ya link olarak ya da manuel girişle), Gemini API üzerinden analiz edilir ve sonuçlar Google Sheets’e otomatik kaydedilir.
+Bu proje AI destekli bir Tweet analiz uygulamasıdır. Kullanıcıdan alınan bir tweet (ya link olarak ya da manuel girişle), Gemini API üzerinden analiz edilir ve sonuçlar Google Sheets’e otomatik kaydedilir.
 
-Özellikler
-	•	🔗 URL ile Analiz: Tweet linkini girerek analiz yapar (Not: Ücretsiz X API’da 15 dakikada 1 istek limiti vardır)
-	•	📝 Manuel Giriş: Kullanıcı adı ve tweet metni elle girilerek analiz yapılabilir
-	•	📊 Analiz Sonuçları: Tweet içeriği, kullanıcı adı, içerik özeti (1-2 cümle), duygu analizi (olumlu / olumsuz / nötr), tarih ve saat bilgisi
-	•	📁 Google Sheets Entegrasyonu: Her analiz sonucu tabloya yeni bir satır olarak eklenir
-	•	💻 Responsive Tasarım: Hem mobil hem desktop cihazlara uyumlu
-	•	🔔 Toast Bildirimi: Sonuçlar başarılı şekilde kaydedildiğinde kullanıcıya bildirim gösterilir
+## Özellikler
+- 🔗 **URL ile Analiz**: Tweet linkini girerek analiz yapar *(Not: Ücretsiz X API’da 15 dakikada 1 istek limiti vardır)*
+- 📝 **Manuel Giriş**: Kullanıcı adı ve tweet metni elle girilerek analiz yapılabilir
+- 📊 **Analiz Sonuçları**: Tweet içeriği, kullanıcı adı, içerik özeti (1-2 cümle), duygu analizi (olumlu / olumsuz / nötr), tarih ve saat bilgisi
+- 📁 **Google Sheets Entegrasyonu**: Her analiz sonucu tabloya yeni bir satır olarak eklenir
+- 💻 **Responsive Tasarım**: Hem mobil hem desktop cihazlara uyumlu
+- 🔔 **Toast Bildirimi**: Sonuçlar başarılı şekilde kaydedildiğinde kullanıcıya bildirim gösterilir
 
 Kurulum
 
