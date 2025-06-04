@@ -1,64 +1,80 @@
-Tweet Analyzer - Swipeline Case
-Swipeline AI Studio Developer Intern görevi için geliştirilen bir Tweet Analyzer uygulaması. Tweet’leri X API ile çekebilir veya manuel girişle analiz eder, Gemini API ile özet ve duygu analizi yapar, sonuçları Google Sheets’e kaydeder.
-Özellikler
 
-URL ile Analiz: X API üzerinden tweet URL’si ile analiz yapar (Ücretsiz planda 15 dakikada 1 istek limiti var, dikkat!).
-Manuel Giriş: Kullanıcı adı ve tweet içeriği manuel girilip analiz yapılır.
-Sonuçlar: Kullanıcı adı, tweet, özet, duygu analizi ve tarih bilgisi ekranda ve Google Sheets’te gösterilir.
-Responsive Tasarım: Mobil ve desktop cihazlara uyumlu.
-Toast Bildirimi: Analiz sonrası sonuçların Google Sheets’e kaydedildiği bildirimi.
+⸻
+
+Tweet Analyzer – Swipeline Case
+
+Bu proje, Swipeline AI Studio Developer Intern teknik görevi kapsamında geliştirilen bir AI destekli Tweet analiz uygulamasıdır. Kullanıcıdan alınan bir tweet (ya link olarak ya da manuel girişle), Gemini API üzerinden analiz edilir ve sonuçlar Google Sheets’e otomatik kaydedilir.
+
+Özellikler
+	•	🔗 URL ile Analiz: Tweet linkini girerek analiz yapar (Not: Ücretsiz X API’da 15 dakikada 1 istek limiti vardır)
+	•	📝 Manuel Giriş: Kullanıcı adı ve tweet metni elle girilerek analiz yapılabilir
+	•	📊 Analiz Sonuçları: Tweet içeriği, kullanıcı adı, içerik özeti (1-2 cümle), duygu analizi (olumlu / olumsuz / nötr), tarih ve saat bilgisi
+	•	📁 Google Sheets Entegrasyonu: Her analiz sonucu tabloya yeni bir satır olarak eklenir
+	•	💻 Responsive Tasarım: Hem mobil hem desktop cihazlara uyumlu
+	•	🔔 Toast Bildirimi: Sonuçlar başarılı şekilde kaydedildiğinde kullanıcıya bildirim gösterilir
 
 Kurulum
 
-Repoyu Klonla:git clone https://github.com/<kullanıcı-adın>/swipeline-case.git
+1.	Repoyu Klonla:
+````
+git clone https://github.com/emirrcodes/swipeline-case.git
 cd swipeline-case
+````
 
+2.	Bağımlılıkları Yükle:
 
-Bağımlılıkları Yükle:npm install
-
-Frontend için:cd frontend
+Backend:
+````
+cd backend
 npm install
+`````
 
+Frontend:
+`````
+cd ../frontend
+npm install
+`````
 
-.env Dosyasını Oluştur:Proje kök dizininde .env dosyası oluştur ve şu bilgileri ekle:GEMINI_API_KEY=your-gemini-api-key
-GOOGLE_SHEETS_ID=1La3s4tSLambY-fUcVeAc2a4fnIwPxVQoxxazeJfUHhk
-X_API_KEY=your-x-api-key
-X_API_SECRET=your-x-api-secret
-X_ACCESS_TOKEN=your-x-access-token
-X_ACCESS_TOKEN_SECRET=your-x-access-token-secret
+	3.	.env Dosyasını Oluştur:
 
+backend/.env içinde:
+````
+----
+````
 
-Google Sheets API için Credentials:
-Google Cloud’dan credentials.json dosyasını al, proje kök dizinine koy.
+4.	Google Sheets API için credentials.json dosyasını Google Cloud Console üzerinden oluştur, backend/safe/credentials.json konumuna koy. Bu klasör .gitignore ile korunmaktadır.
 
+Çalıştırma
 
-Backend’i Çalıştır:node index.js
-
-
-Frontend’i Çalıştır:cd frontend
-npm start
-
-
+Backend:
+`````
+cd backend
+node index.js
+`````
+Frontend:
+````
+cd frontend
+npm run dev
+`````
+Uygulama tarayıcıdan http://localhost:5173 üzerinden erişilebilir.
 
 Kullanım
+	•	Tweet URL’si girerek analiz: Örnek → https://x.com/username/status/123456789
+	•	Manuel modda analiz: Örnek kullanıcı adı → @kanka, içerik → Hava bugün mükemmel!
+	•	Sonuçlar ekranda görüntülenir ve otomatik olarak Google Sheets’e yazılır
 
-Tarayıcıda http://localhost:5173’e git.
-URL ile Analiz: Tweet URL’si gir (ör: https://x.com/username/status/123456789), "Analyze"e bas. (Not: Ücretsiz X API’da 15 dakikada 1 istek limiti var.)
-Manuel Giriş: Kullanıcı adı (ör: @kanka) ve tweet içeriği (ör: Hava güzel!) gir, "Analyze"e bas.
-Sonuçlar ekranda gösterilir ve Google Sheets’e kaydedilir.
+Örnek Google Sheets (Read-Only):
+https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID
 
-Örnek Tablo
-Sonuçlar şu Google Sheets’e kaydediliyor (Salt okunur):Google Sheets Link
 Notlar
+	•	X API free plan’da 15 dakikada 1 istek hakkı var. Gelişmiş erişim önerilir.
+	•	Google Sheets’teki sayfa adı “Sayfa1” olarak sabittir
+	•	react-toastify ile analiz sonrası bildirim sağlanır
+	•	UI sade tutulmuştur, odak backend + analiz işlevselliğidir
 
-X API limiti yüzünden "URL ile Analiz" modunda 15 dakikada 1 istek yapılabilir. Elevated Access önerilir.
-Google Sheets’te sayfa adı Sayfa1 olarak tespit edildi, kod buna göre güncellendi.
-Responsive tasarım mobil ve desktop’ta sorunsuz çalışır.
-react-toastify ile analiz sonrası bildirim eklendi.
+Kullanılan Teknolojiler
+	•	Frontend: React, Axios, react-icons, react-toastify
+	•	Backend: Node.js, Express, Axios, OAuth-1.0a
+	•	API’ler: Gemini API, Google Sheets API (isteğe bağlı X API)
 
-Teknolojiler
-
-Frontend: React, Axios, react-icons, react-toastify
-Backend: Node.js, Express, Axios, OAuth-1.0a
-API’ler: X API, Gemini API, Google Sheets API
-
+Ahmet Emir Arslan
