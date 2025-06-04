@@ -1,4 +1,4 @@
-*Tweet Analyzer – Swipeline Case*
+**Tweet Analyzer – Swipeline Case**
 
 Bu proje, Swipeline AI Studio Developer Intern teknik görevi kapsamında geliştirilen bir AI destekli Tweet analiz uygulamasıdır. Kullanıcıdan alınan bir tweet (ya link olarak ya da manuel girişle), Gemini API üzerinden analiz edilir ve sonuçlar Google Sheets’e otomatik kaydedilir.
 
