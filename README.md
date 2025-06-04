@@ -55,18 +55,21 @@ npm run dev
 Uygulama tarayıcıdan http://localhost:5173 üzerinden erişilebilir.
 
 Kullanım
-	-	Tweet URL’si girerek analiz: Örnek → https://x.com/Swipeline_tr/status/1928468612395807155
-	-	Manuel modda analiz: Örnek kullanıcı adı → @username, içerik → Hava bugün mükemmel!
-	-	Sonuçlar ekranda görüntülenir ve otomatik olarak Google Sheets’e yazılır
+	•	Tweet URL’si girerek analiz:
+Örnek → https://x.com/Swipeline_tr/status/1928468612395807155
+	•	Manuel modda analiz:
+Örnek kullanıcı adı → @username, içerik → Hava bugün mükemmel!
+	•	Sonuçlar ekranda görüntülenir ve otomatik olarak Google Sheets’e yazılır
 
-Örnek Google Sheets (Read-Only):
-https://docs.google.com/spreadsheets/d/1La3s4tSLambY-fUcVeAc2a4fnIwPxVQoxxazeJfUHhk
+Örnek Google Sheets (Read-Only)
+
+📄 https://docs.google.com/spreadsheets/d/1La3s4tSLambY-fUcVeAc2a4fnIwPxVQoxxazeJfUHhk
 
 Notlar
 	•	X API free plan’da 15 dakikada 1 istek hakkı var. Gelişmiş erişim önerilir.
-	•	Google Sheets’teki sayfa adı “Sayfa1” olarak sabittir
-	•	react-toastify ile analiz sonrası bildirim sağlanır
-	•	UI sade tutulmuştur, odak backend + analiz işlevselliğidir
+	•	Google Sheets’teki sayfa adı “Sayfa1” olarak sabittir.
+	•	react-toastify ile analiz sonrası kullanıcıya bildirim gösterilir.
+	•	UI sade tutulmuştur, odak backend + analiz işlevselliğidir.
 
 Kullanılan Teknolojiler
 	•	Frontend: React, Axios, react-icons, react-toastify
