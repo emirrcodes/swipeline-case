@@ -74,4 +74,4 @@ Kullanılan Teknolojiler
 	•	Backend: Node.js, Express, Axios, OAuth-1.0a
 	•	API’ler: Gemini API, Google Sheets API (isteğe bağlı X API)
 
-## **Ahmet Emir Arslan**
+**Ahmet Emir Arslan**
