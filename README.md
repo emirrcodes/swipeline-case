@@ -59,12 +59,12 @@ npm run dev
 Uygulama tarayıcıdan http://localhost:5173 üzerinden erişilebilir.
 
 Kullanım
-	•	Tweet URL’si girerek analiz: Örnek → https://x.com/username/status/123456789
-	•	Manuel modda analiz: Örnek kullanıcı adı → @kanka, içerik → Hava bugün mükemmel!
+	•	Tweet URL’si girerek analiz: Örnek → https://x.com/Swipeline_tr/status/1928468612395807155
+	•	Manuel modda analiz: Örnek kullanıcı adı → @username, içerik → Hava bugün mükemmel!
 	•	Sonuçlar ekranda görüntülenir ve otomatik olarak Google Sheets’e yazılır
 
 Örnek Google Sheets (Read-Only):
-https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID
+https://docs.google.com/spreadsheets/d/1La3s4tSLambY-fUcVeAc2a4fnIwPxVQoxxazeJfUHhk
 
 Notlar
 	•	X API free plan’da 15 dakikada 1 istek hakkı var. Gelişmiş erişim önerilir.
@@ -77,4 +77,4 @@ Kullanılan Teknolojiler
 	•	Backend: Node.js, Express, Axios, OAuth-1.0a
 	•	API’ler: Gemini API, Google Sheets API (isteğe bağlı X API)
 
-Ahmet Emir Arslan
+#Ahmet Emir Arslan
