@@ -32,14 +32,13 @@ cd ../frontend
 npm install
 `````
 
-	3.	.env Dosyasını Oluştur:
+3.	.env Dosyasını Oluştur:
 
-backend/.env içinde:
+backend/.env ve backend/credentials.json:
 ````
 ----
 ````
 
-4.	Google Sheets API için credentials.json dosyasını Google Cloud Console üzerinden oluştur, backend/safe/credentials.json konumuna koy. Bu klasör .gitignore ile korunmaktadır.
 
 Çalıştırma
 
